@@ -1,0 +1,164 @@
+@import url("./style.css");
+
+.secondary-hero-image {
+  background: #fff0 url("../media/contacts-page-hero.jpg") center /cover no-repeat;
+}
+
+.sister-banner {
+  background: var(--background-color-two) url("../media/sister-banner-2.jpg") center /cover no-repeat;
+}
+
+h1 {
+line-height: 36px;
+}
+
+h1 + p {
+  margin-top: 15px;
+  padding: 0;
+}
+
+h2 + p {
+  margin-top: 15px;
+}
+
+p + h3 {
+  margin-top: 10px;
+}
+
+main > h2 {
+  margin-top: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: var(--font-color-two);
+  font-size: 36px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  margin-top: 40px;
+  background-color: var(--background-color-one);
+  color: var(--font-color-two);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+
+  article, aside {
+    padding: 10px 20px;
+    background-color: var(--background-color-one);
+    border-radius: 10px;
+  }
+
+  article {
+    min-width: calc(40% - 10px);
+    height: 100%;
+  }
+
+  aside {
+    min-width: calc(60% - 10px);
+    height: 100%;
+  }
+
+}
+
+aside h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input {
+  width: calc(100%);
+  margin-top: 15px;
+  border: 1px solid rgb(234, 232, 232);
+  border-radius: 40px;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 18px;
+  background-color: var(--background-color-one);
+  transition: all ease-in-out 0.2s;
+
+  &:focus {
+    background-color: #fff;
+  }
+
+  &:hover {
+    border: 1px solid var(--background-color-one);
+  }
+}
+
+input[type=submit]{
+  background-color: var(--action-button-color);
+  color: #fff;
+ 
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+input[type=reset]{
+  background-color: var(--background-color-two);
+  color: var(--action-button-color);
+  margin-top: 9px;
+  border: 1px solid var(--action-button-color);
+
+  &:hover{
+    background-color: #00005810;
+  }
+}
+
+.form-box {
+  width: calc(50% - 5px);
+}
+
+.message {
+  height: 150px;
+  border-radius: 10px;
+  overflow: auto;
+  line-height: 18px;
+  width: calc(100%);
+  margin-top: 15px;
+  border: 1px solid rgb(234, 232, 232);
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--background-color-one);
+  color: #777777;
+  transition: all ease-in-out 0.2s;
+  resize: none;
+
+  &:focus {
+    background-color: #fff;
+    color: #000;
+  }
+
+  &:hover {
+    border: 1px solid var(--background-color-one);
+  }
+}
+
+@media (max-width: 800px) {
+
+  .content {
+    display: block;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  aside h2 {
+    font-size: 24px;
+  }
+}
+
+

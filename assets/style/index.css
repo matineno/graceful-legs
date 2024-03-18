@@ -1,0 +1,122 @@
+@import url('style.css');
+
+.secondary-hero-image {
+  background: #fff0 url("../media/main-page-hero.jpg") center /cover no-repeat;
+ }
+
+.product-image-1 {
+  background: #fff0 url("../media/product-image-1.jpg") center /cover no-repeat;
+  border: solid 1px var(--background-color-one);
+}
+
+.product-image-2 {
+background: #fff0 url("../media/product-image-2.jpg") center /cover no-repeat;
+border: solid 1px var(--background-color-one);
+}
+
+.product-image-3 {
+background: #fff0 url("../media/product-image-3.jpg") center /cover no-repeat;
+border: solid 1px var(--background-color-one);
+}
+
+.product-image-4 {
+background: #fff0 url("../media/product-image-4.jpg") center /cover no-repeat;
+border: solid 1px var(--background-color-one);
+}
+.first-section-image {
+    background: #fff0 url("../media/banner-1.jpg") center /cover no-repeat;
+}
+
+.second-section-image {
+background: #fff0 url("../media/banner-2.gif") center /cover no-repeat;
+border-radius: 10px;
+}
+
+.footer-image {
+  border-radius: 0px;
+  margin-top: 40px;
+  background: #fff0 url('../media/banner-3.jpg') center / cover no-repeat;
+  
+}
+
+h1 {
+  line-height: 36px;
+}
+
+h1 + p {
+  margin-top: 15px;
+  padding: 0;
+}
+
+main > h2 {
+  margin-top: 40px;
+}
+
+
+h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: var(--font-color-two);
+  font-size: 36px;
+}
+
+h2 + p {
+  margin-top: 15px;
+}
+
+
+.content {
+  margin-top: 40px;
+  background-color: var(--background-color-one);
+  color: var(--font-color-two);
+
+  section, div{
+    padding: 10px;
+    background-color: var(--background-color-one);
+    border-radius: 10px;
+  }
+}
+
+.column {
+  align-items: center;
+  text-align: center;
+  width: 220px;
+}
+
+.buy-section{
+  margin-bottom: 20px;
+}
+
+.buy-button {  
+
+  margin-top: 20px;
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--background-color-two) ;
+  border: 1px solid var(--action-button-color);
+  border-radius: 40px;
+  color: var(--action-button-color);
+  transition: all ease-in-out 0.2s;
+
+  &:hover {
+    background-color: #00005810;
+    
+  }
+}
+
+@media (max-width:800px){
+  .column{
+      max-width: 220px;
+      flex: 0 0 calc(50% - 10px)
+  }
+}
+
+@media(max-width:680px){
+  .column{
+      max-width: 220px;
+      flex: 0 0 calc(100% - 10px);
+  }
+}
